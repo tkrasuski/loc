@@ -1,2 +1,3 @@
-# loc
-The land of confusion - arcade game
+# Land of confusion
+Python arcade game
+
