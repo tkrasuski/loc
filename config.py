@@ -43,7 +43,7 @@ class Map(object):
             self.mapName = self.map['MapName']
             objects = self.map['Objects']
             for o in self.map.keys():
-                if o['Type'] = 'Block':
+                if o['Type'] == 'Block':
                     try:
                         obj = compile(o['Class'],'<string>','single')
                         obj.Xpos(o['Xpos'])
@@ -51,7 +51,7 @@ class Map(object):
                         self.blox.append(obj)
                     except:
                         raise
-                elif o['Type'] = 'Enemy':
+                elif o['Type'] == 'Enemy':
                     try:
                         obj = compile(o['Class'],'<string>','single')
                         obj.Xpos(o['Xpos'])
@@ -59,7 +59,7 @@ class Map(object):
                         self.enemies.append(obj)
                     except:
                         raise
-                elif o['Type'] = 'Door':
+                elif o['Type'] == 'Door':
                     try:
                         obj = compile(o['Class'],'<string>','single')
                         obj.Xpos(o['Xpos'])
